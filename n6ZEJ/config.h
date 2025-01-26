@@ -3,6 +3,9 @@
   See config.h options at https://docs.qmk.fm/#/config_options?id=the-configh-file
 */
 
+#undef TAPPING_TERM
+#define TAPPING_TERM 100
+
 #undef RGB_MATRIX_TIMEOUT
 #define RGB_MATRIX_TIMEOUT 300000
 
@@ -13,7 +16,7 @@
 #undef MOUSEKEY_MAX_SPEED
 #define MOUSEKEY_MAX_SPEED 9
 
-#define SERIAL_NUMBER "n6ZEJ/9DxrgW"
+#define SERIAL_NUMBER "n6ZEJ/rbKyel"
 #define LAYER_STATE_16BIT
 #define COMBO_COUNT 6
 
