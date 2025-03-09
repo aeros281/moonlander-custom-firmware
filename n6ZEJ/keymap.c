@@ -90,7 +90,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LEFT_CTRL,   KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           KC_8,                                                                           LALT(LCTL(KC_SLASH)),KC_H,           KC_J,           KC_K,           KC_L,           KC_SCLN,        KC_QUOTE,       
     KC_LEFT_SHIFT,  KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                           KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_TRANSPARENT, 
     KC_BSPC,        KC_SCLN,        KC_QUOTE,       MO(10),         KC_SPACE,       KC_LEFT_ALT,                                                                                                    KC_PAUSE,       KC_ENTER,       KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
-    MO(9),          KC_ESCAPE,      KC_0,                           TG(10),         KC_TRANSPARENT, KC_TRANSPARENT
+    MO(9),          KC_ESCAPE,      KC_0,                           KC_INSERT,      KC_PGDN,        KC_PAGE_UP
   ),
   [8] = LAYOUT_moonlander(
     KC_9,           KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,          KC_6,                                           KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
