@@ -32,7 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           TG(5),                                          TG(3),          KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_BSLS,        
     MT(MOD_LCTL, KC_ESCAPE),MT(MOD_LGUI, KC_A),MT(MOD_LALT, KC_S),MT(MOD_LCTL, KC_D),MT(MOD_LSFT, KC_F),KC_G,           KC_PGDN,                                                                        LALT(LCTL(KC_SLASH)),KC_H,           MT(MOD_RSFT, KC_J),MT(MOD_RCTL, KC_K),MT(MOD_RALT, KC_L),MT(MOD_RGUI, KC_SCLN),KC_QUOTE,       
     LGUI(LCTL(KC_LEFT)),KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                           KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       LGUI(LCTL(KC_RIGHT)),
-    KC_LEFT_CTRL,   KC_LEFT_CTRL,   KC_LEFT_GUI,    KC_LEFT_ALT,    LT(6,KC_ENTER), OSL(8),                                                                                                         KC_DELETE,      MO(11),         TG(6),          KC_TRANSPARENT, LGUI(LSFT(KC_S)),TO(1),          
+    KC_LEFT_CTRL,   KC_LEFT_CTRL,   KC_LEFT_GUI,    KC_LEFT_ALT,    LT(6,KC_ENTER), KC_LEFT_SHIFT,                                                                                                  KC_DELETE,      MO(11),         TG(6),          KC_TRANSPARENT, LGUI(LSFT(KC_S)),TO(1),          
     LT(2,KC_BSPC),  CW_TOGG,        KC_LEFT_GUI,                    ST_MACRO_4,     TD(DANCE_0),    LT(3,KC_SPACE)
   ),
   [1] = LAYOUT_moonlander(
