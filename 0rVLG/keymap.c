@@ -151,40 +151,20 @@ combo_t key_combos[COMBO_COUNT] = {
 };
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case MT(MOD_LCTL, KC_ESCAPE):
-            return 0;
-        case MT(MOD_LGUI, KC_A):
-            return g_tapping_term + 50;
-        case MT(MOD_LALT, KC_S):
-            return g_tapping_term + 50;
-        case MT(MOD_LCTL, KC_D):
-            return g_tapping_term + 50;
         case LGUI(LCTL(KC_LEFT)):
-            return 0;
-        case LT(6,KC_ENTER):
-            return g_tapping_term -55;
-        case LT(2,KC_BSPC):
             return g_tapping_term -80;
-        case MT(MOD_RCTL, KC_K):
-            return g_tapping_term + 50;
-        case MT(MOD_RALT, KC_L):
-            return g_tapping_term + 50;
-        case MT(MOD_RGUI, KC_SCLN):
-            return g_tapping_term + 50;
+        case LT(6,KC_ENTER):
+            return g_tapping_term -135;
+        case LT(2,KC_BSPC):
+            return g_tapping_term -160;
         case LGUI(LCTL(KC_RIGHT)):
-            return 0;
-        case TD(DANCE_0):
-            return g_tapping_term -50;
-        case LT(3,KC_SPACE):
-            return g_tapping_term -50;
-        case MT(MOD_LGUI, KC_ESCAPE):
-            return 0;
+            return g_tapping_term -80;
         case TD(DANCE_1):
-            return 0;
+            return g_tapping_term -80;
         case TD(DANCE_2):
-            return 0;
+            return g_tapping_term -80;
         case LT(4,KC_SPACE):
-            return g_tapping_term -50;
+            return g_tapping_term -130;
         default:
             return g_tapping_term;
     }
