@@ -148,6 +148,8 @@ combo_t key_combos[COMBO_COUNT] = {
 };
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
+        case MT(MOD_LCTL, KC_ESCAPE):
+            return g_tapping_term -130;
         case LGUI(LCTL(KC_LEFT)):
             return g_tapping_term -80;
         case LT(6,KC_ENTER):
@@ -156,6 +158,8 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
             return g_tapping_term -160;
         case LGUI(LCTL(KC_RIGHT)):
             return g_tapping_term -80;
+        case LT(3,KC_SPACE):
+            return g_tapping_term -130;
         case TD(DANCE_1):
             return g_tapping_term -80;
         case TD(DANCE_2):
