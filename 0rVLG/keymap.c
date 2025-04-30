@@ -275,18 +275,22 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (record->event.pressed) {
       SEND_STRING("git commit --amend --no-edit");
     }
+    break;
     case ST_MACRO_B:
     if (record->event.pressed) {
       SEND_STRING("git rebase -i --autosquash origin/main");
     }
+    break;
     case ST_MACRO_N:
     if (record->event.pressed) {
       SEND_STRING("git status");
     }
+    break;
     case ST_MACRO_M:
     if (record->event.pressed) {
       SEND_STRING("git commit");
     }
+    break;
     case ST_MACRO_0:
     if (record->event.pressed) {
       SEND_STRING(SS_TAP(X_ESCAPE)SS_DELAY(100)  SS_LSFT(SS_TAP(X_SCLN))SS_DELAY(100)  SS_TAP(X_W)  SS_DELAY(100) SS_TAP(X_ENTER));
