@@ -109,9 +109,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     MO(9),          KC_ESCAPE,      KC_0,                           KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
   ),
   [9] = LAYOUT_moonlander(
-    KC_F9,          KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,          KC_F6,                                          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
-    KC_N,           KC_J,           KC_I,           KC_O,           KC_H,           KC_P,           KC_F7,                                          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
-    KC_4,           KC_1,           KC_2,           KC_3,           KC_5,           KC_L,           KC_F8,                                                                          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_F9,          KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,          KC_F6,                                          LALT(LGUI(LCTL(LSFT(KC_SCLN)))),KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_N,           KC_J,           KC_I,           KC_O,           KC_H,           KC_P,           KC_F7,                                          LALT(LGUI(LCTL(LSFT(KC_QUOTE)))),KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
+    KC_4,           KC_1,           KC_2,           KC_3,           KC_5,           KC_L,           KC_F8,                                                                          LALT(LGUI(LCTL(LSFT(KC_BSLS)))),KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_M,           KC_COMMA,       KC_DOT,         KC_U,           KC_K,           KC_Y,                                           KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_F12,         KC_F11,         KC_F10,         KC_F9,          KC_TRANSPARENT, KC_CAPS,                                                                                                        KC_HOME,        KC_ENTER,       KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_K,           TO(0),                          KC_INSERT,      KC_DELETE,      KC_END
@@ -136,19 +136,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 const uint16_t PROGMEM combo0[] = { MT(MOD_RGUI, KC_SCLN), KC_QUOTE, COMBO_END};
 const uint16_t PROGMEM combo1[] = { KC_Q, KC_W, COMBO_END};
 const uint16_t PROGMEM combo2[] = { KC_1, KC_2, COMBO_END};
-const uint16_t PROGMEM combo3[] = { KC_C, KC_V, COMBO_END};
-const uint16_t PROGMEM combo4[] = { MT(MOD_LSFT, KC_F), KC_G, COMBO_END};
-const uint16_t PROGMEM combo5[] = { KC_H, MT(MOD_RSFT, KC_J), COMBO_END};
-const uint16_t PROGMEM combo6[] = { KC_Q, KC_TAB, COMBO_END};
+const uint16_t PROGMEM combo3[] = { MT(MOD_LSFT, KC_F), KC_G, COMBO_END};
+const uint16_t PROGMEM combo4[] = { KC_H, MT(MOD_RSFT, KC_J), COMBO_END};
+const uint16_t PROGMEM combo5[] = { KC_Q, KC_TAB, COMBO_END};
+const uint16_t PROGMEM combo6[] = { KC_Z, KC_X, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo0, TT(6)),
     COMBO(combo1, ST_MACRO_0),
     COMBO(combo2, ST_MACRO_1),
-    COMBO(combo3, OSL(5)),
+    COMBO(combo3, OSM(MOD_LSFT)),
     COMBO(combo4, OSM(MOD_LSFT)),
-    COMBO(combo5, OSM(MOD_LSFT)),
-    COMBO(combo6, ST_MACRO_2),
+    COMBO(combo5, ST_MACRO_2),
+    COMBO(combo6, CW_TOGG),
 };
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
