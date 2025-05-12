@@ -6,10 +6,6 @@
 
 enum custom_keycodes {
   RGB_SLD = ML_SAFE_RANGE,
-  ST_MACRO_A,
-  ST_MACRO_B,
-  ST_MACRO_N,
-  ST_MACRO_M,
   HSV_0_0_255,
   ST_MACRO_0,
   ST_MACRO_1,
@@ -21,6 +17,10 @@ enum custom_keycodes {
   ST_MACRO_7,
   ST_MACRO_8,
   ST_MACRO_9,
+  ST_MACRO_A,
+  ST_MACRO_B,
+  ST_MACRO_N,
+  ST_MACRO_M,
 };
 
 
