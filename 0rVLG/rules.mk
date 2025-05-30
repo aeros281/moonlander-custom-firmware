@@ -10,4 +10,3 @@ SPACE_CADET_ENABLE = no
 CAPS_WORD_ENABLE = yes
 COMBO_ENABLE = yes
 LAYER_LOCK_ENABLE = yes
-DEBOUNCE_TYPE = asym_eager_defer_pk
