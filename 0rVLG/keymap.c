@@ -492,3 +492,19 @@ bool is_flow_tap_key(uint16_t keycode) {
     }
     return false;
 }
+
+bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record) {
+  // only trigger combo on layer 1 and 2
+  switch (biton32(layer_state)) {
+    case 1:
+      return true;
+      break;
+    case 2:
+      return true;
+      break;
+   default:
+      return false;
+    break;
+  }
+  return false;
+}
