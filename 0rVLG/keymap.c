@@ -494,12 +494,12 @@ bool is_flow_tap_key(uint16_t keycode) {
 }
 
 bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record) {
-  // only trigger combo on layer 1 and 2
-  switch (biton32(layer_state)) {
-    case 1:
+  // only trigger combo on layer 0 and 1
+  switch (get_highest_layer(layer_state)) {
+    case 0:
       return true;
       break;
-    case 2:
+    case 1:
       return true;
       break;
    default:
