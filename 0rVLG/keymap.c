@@ -142,15 +142,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 };
 
-const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM = LAYOUT(
-  'L', 'L', 'L', 'L', 'L', 'L', 'L', 'R', 'R', 'R', 'R', 'R', 'R', 'R',
-  'L', 'L', 'L', 'L', 'L', 'L', 'L', 'R', 'R', 'R', 'R', 'R', 'R', 'R',
-  'L', 'L', 'L', 'L', 'L', 'L', 'L', 'R', 'R', 'R', 'R', 'R', 'R', 'R',
-  'L', 'L', 'L', 'L', 'L', 'L', 'R', 'R', 'R', 'R', 'R', 'R',
-  'L', 'L', 'L', 'L', 'L', 'L', 'R', 'R', 'R', 'R', 'R', 'R',
-                 'L', 'L', 'L', 'R', 'R', 'R'
-);
-
 const uint16_t PROGMEM combo0[] = { MT(MOD_RGUI, KC_SCLN), KC_QUOTE, COMBO_END};
 const uint16_t PROGMEM combo1[] = { KC_Q, KC_W, COMBO_END};
 const uint16_t PROGMEM combo2[] = { KC_1, KC_2, COMBO_END};
