@@ -316,7 +316,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     break;
     case ST_MACRO_0:
     if (record->event.pressed) {
-      SEND_STRING(SS_LALT(SS_TAP(X_TAB) ));
+      register_code(KC_LALT);
+      wait_ms(50);
+      register_code(KC_TAB);
+      wait_ms(10);
+      layer_on(3);
+      unregister_code(KC_TAB);
+    } else {
+      unregister_code(KC_LALT);
+      layer_off(3);
     }
     break;
     case ST_MACRO_1:
@@ -326,7 +334,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     break;
     case ST_MACRO_2:
     if (record->event.pressed) {
-      SEND_STRING(SS_TAP(X_LEFT_GUI)SS_DELAY(100)  SS_TAP(X_TAB));
+      register_code(KC_LGUI);
+      wait_ms(50);
+      register_code(KC_TAB);
+      wait_ms(10);
+      layer_on(4);
+      unregister_code(KC_TAB);
+    } else {
+      unregister_code(KC_LGUI);
+      layer_off(4);
     }
     break;
     case ST_MACRO_3:
