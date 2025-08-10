@@ -173,9 +173,9 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
             return TAPPING_TERM -80;
         case LGUI(LCTL(KC_RIGHT)):
             return 0;
-        case DUAL_FUNC_1:
+        case DUAL_FUNC_0:
             return 0;
-        case DUAL_FUNC_2:
+        case DUAL_FUNC_1:
             return 0;
         case LT(4,KC_SPACE):
             return TAPPING_TERM -50;
